@@ -12,7 +12,7 @@ import model.Greeting;
 public class GreetingService {
 
     @Inject
-    private GreetingRepo greetingRepo;
+    protected GreetingRepo greetingRepo;
 
     public List<Greeting> getLatest(int limit) {
         return greetingRepo.getLatest(limit);

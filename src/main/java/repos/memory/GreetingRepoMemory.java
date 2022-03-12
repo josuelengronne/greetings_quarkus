@@ -21,7 +21,6 @@ public class GreetingRepoMemory implements GreetingRepo {
         if (limit >= size) {
             return new ArrayList(memory);
         }
-        System.out.println(size);
         return this.memory.subList(size - limit, size );
     }
 }

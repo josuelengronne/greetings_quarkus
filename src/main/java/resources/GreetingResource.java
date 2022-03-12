@@ -19,7 +19,7 @@ import services.GreetingService;
 public class GreetingResource {
 
     @Inject
-    private GreetingService greetingService;
+    protected GreetingService greetingService;
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
